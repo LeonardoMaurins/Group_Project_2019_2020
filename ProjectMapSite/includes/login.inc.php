@@ -12,7 +12,7 @@ if(isset($_POST['login-submit'])) {
     $password = $_POST['pwd'];
 
     if(empty($username) || empty($password)) {
-        header("Location: ../public/login.php?error=Fields are empty&username=".$username."&password=".$password);
+        header("Location: ../templates/login.php?error=Fields are empty&username=".$username."&password=".$password);
         return;
     }
 
@@ -20,7 +20,7 @@ if(isset($_POST['login-submit'])) {
     $user = User::getOneByUsernameAndPassword($username, $password);
 
     if (!$user){
-        header("Location: ../public/login.php?error=Invalid credentials");
+        header("Location: ../templates/login.php?error=Invalid credentials");
         return;
     }
 
