@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% set nav_off = true %}
+
+    {% block title %}Signup{% endblock %}
+
+    {% block body %}
+        <main>
+            <div class="text-center">
+                <img src="../../images/TUDublinLogo.png" width="350" height="250" class="text-center" alt="logo">
+                <form class="form-group" action="{{ path('signup') }}" method="POST">
+                    <div class="col"></div>
+                    <h1>Signup</h1>
+                    <input type="text" class="col.col-sm-" name="username" placeholder="Student ID">
+                    <div class="col"></div>
+                    <br>
+                    <input type="text" class="col.col-sm-" name="email" placeholder="E-Mail">
+                    <div class="col"></div>
+                    <br>
+                    <input type="password" class="col.col-sm-" name="password" placeholder="Password">
+                    <div class="col"></div>
+                    <br>
+                    <input type="password" class="col.col-sm-" name="password_confirm" placeholder="Confirm Password">
+                    <br><br>
+                    <button type="submit" class="btn btn-dark" name="signup-submit" value="create_user">Signup</button>
+                    <br><br>
+                    <a href="{{ path('login') }}">Return to login</a>
+                    <br><br>
+                </form>
+            </div>
+
+            {% if errors is not empty %}
+                <div class="text-center">
+                    <table class="table table-striped">
+                        <thead>
+                        <th>Sorry, there was a problem with your student registration attempt:</th>
+                        </thead>
+                        <th>
+                            <font color="red">
+                                {% for error in errors %}
+                                    {{ error }}
+                                    <br>
+                                {% endfor %}
+                            </font>
+                        </th>
+                    </table>
+                </div>
+            {% endif %}
+        </main>
+    {% endblock %}

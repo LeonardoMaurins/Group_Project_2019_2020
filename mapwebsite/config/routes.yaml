@@ -1,0 +1,3 @@
+selectuser:
+    path: /
+    controller: App\Controller\MainController::selectuser

@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+    {% block title %}Homepage{% endblock %}
+
+    {% block body %}
+        <body>
+        <div class='table-responsive' align="center">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <a href="{{ path('map') }}"><img src="../images/map_icon.png" alt="Map" id="menuIcon"></a>
+                        <br>
+                        <a href="{{ path('map') }}">
+                            <button class="btn btn-dark">Campus Map</button>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="{{ path('underconstruction') }}"><img src="../images/service_icon.png" alt="Services"
+                                                                       id="menuIcon"></a>
+                        <br>
+                        <a href="{{ path('underconstruction') }}">
+                            <button class="btn btn-dark">Student Services</button>
+                        </a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <a href="{{ path('underconstruction') }}"><img src="../images/time_icon.png" alt="Timetable"
+                                                                       id="menuIcon"></a>
+                        <br>
+                        <a href="{{ path('underconstruction') }}">
+                            <button class="btn btn-dark">Timetable</button>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="{{ path('bustimetable') }}"><img src="../images/bus_icon.png" alt="Bus" id="menuIcon"></a>
+                        <br>
+                        <a href="{{ path('bustimetable') }}">
+                            <button class="btn btn-dark">Shuttle Bus</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="{{ path('staffdirectory') }}">View staff directory</a>
+        </div>
+        </body>
+    {% endblock %}

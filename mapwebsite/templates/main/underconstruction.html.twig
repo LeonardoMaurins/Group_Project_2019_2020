@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% set nav_off = true %}
+
+{% block title %}Under Construction{% endblock %}
+
+{% block body %}
+    <main>
+        <div class="text-center">
+            <img src="../images/TUDublinLogo.png" width="350" height="250" class="text-center" alt="logo">
+            <div role="main" class="ui-content">
+                <h2>503 Service Unavailable</h2>
+                <p>You've transferred to a page that is not yet complete. Please check back in semester 2 to find the
+                    finished page.</p>
+
+                {# The action returns the user to the previous route before they accessed this page#}
+                <form class="form-group" style="padding-left:15px" action="{{ app.request.headers.get('referer') }}" method="post">
+                    <button class="btn btn-dark">Back</button>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}
