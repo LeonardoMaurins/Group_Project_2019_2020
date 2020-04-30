@@ -10,16 +10,16 @@
                 <form class="form-group" action="{{ path('signup') }}" method="POST">
                     <div class="col"></div>
                     <h1>Signup</h1>
-                    <input type="text" class="col.col-sm-" name="username" placeholder="Student ID">
+                    <input type="text" class="col.col-sm-" required="required" name="username" placeholder="Student ID">
                     <div class="col"></div>
                     <br>
-                    <input type="text" class="col.col-sm-" name="email" placeholder="E-Mail">
+                    <input type="text" class="col.col-sm-" required="required" name="email" placeholder="E-Mail">
                     <div class="col"></div>
                     <br>
-                    <input type="password" class="col.col-sm-" name="password" placeholder="Password">
+                    <input type="password" class="col.col-sm-" required="required" name="password" placeholder="Password">
                     <div class="col"></div>
                     <br>
-                    <input type="password" class="col.col-sm-" name="password_confirm" placeholder="Confirm Password">
+                    <input type="password" class="col.col-sm-" required="required" name="password_confirm" placeholder="Confirm Password">
                     <br><br>
                     <button type="submit" class="btn btn-dark" name="signup-submit" value="create_user">Signup</button>
                     <br><br>

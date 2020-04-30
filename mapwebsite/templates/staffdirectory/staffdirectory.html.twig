@@ -12,23 +12,26 @@
 
                 <table id="myTable" class="table table-hover table-bordered" style="width:75%">
 
-                    <!-- Search form -->
-                    <div style="width:75%;">
-                        <div class="form-group" style="width:70%; float:left; display: inline-block;">
-                            <input class="form-control" id="myInput" onkeyup="myFunction()" type="text"
-                                   placeholder="Search for staff..." aria-label="Search">
-                        </div>
+                    <form class="form-group" method="POST">
+                        <!-- Search form -->
+                        <div style="width:75%;">
+                            <div class="form-group" style="width:70%; float:left; display: inline-block;">
+                                <input class="form-control" id="myInput" name="_search" type="text"
+                                       onkeyup="myFunction()"
+                                       placeholder="Search for staff..." aria-label="Search">
+                            </div>
 
-                        <div class="form-group" style="width:25%; float:right; display: inline-block;">
-                            <select id="sel" class="form-control">
-                                <option value="all">All Departments</option>
-                                {% for department in departments %}
-                                    <option value="{{ department }}">{{ department }}</option>
-                                {% endfor %}
-                            </select>
-                            <br>
+                            <div class="form-group" style="width:25%; float:right; display: inline-block;">
+                                <select id="sel" class="form-control" name="dropdown">
+                                    <option value="all">All Departments</option>
+                                    {% for department in departments %}
+                                        <option value="{{ department }}">{{ department }}</option>
+                                    {% endfor %}
+                                </select>
+                                <br>
+                            </div>
                         </div>
-                    </div>
+                    </form>
 
                     <thead class="table table-dark">
                     <tr>
@@ -37,7 +40,8 @@
                         <th scope="col">Department</th>
                         <th scope="col">Email</th>
                         <th scope="col" style="white-space:nowrap">Phone Number</th>
-                        <th scope="col">Room</th></tr>
+                        <th scope="col">Room</th>
+                    </tr>
                     </thead>
 
                     <tbody>

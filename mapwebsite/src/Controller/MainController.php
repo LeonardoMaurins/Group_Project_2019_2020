@@ -42,13 +42,6 @@ class MainController extends AbstractController
     }
 
     /**
-     * @Route("/underconstruction", name="previouspage")
-     */
-    public function previouspage() {
-        return $this->redirect($request->headers->get('referer'));
-    }
-
-    /**
      * @Route("/map", name="map")
      */
     public function map() {
