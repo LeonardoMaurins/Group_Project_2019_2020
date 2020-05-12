@@ -34,12 +34,35 @@
             </li>
         </ul>
 
+        <div class="form-group mx-sm-3 mb-2">
+            <form class="form-inline" action="{{ path('search') }}" method="POST">
+                <input list="browsers" name="browsers" required="required" class="form-control"
+                       placeholder="Search pages...">
+                <datalist id="browsers">
+                    <option value="Home">
+                    <option value="Map">
+                    <option value="Student Services">
+                    <option value="Timetable">
+                    <option value="Bus Schedule">
+                    <option value="Staff Directory">
+                </datalist>
+                <input type="submit" class="btn btn-primary" style="margin-left: 1em;">
+            </form>
+            {% if error is defined and error is not empty %}
+                <div class="text-center">
+                    <font color="red">
+                        {{ error }}
+                    </font>
+                </div>
+            {% endif %}
+        </div>
+
         <p style="font-weight:bold;font-size:20px;font-style:italic">
             Student Number:
             {% if is_granted("ROLE_USER") %}
                 <font color="red">{{ app.user.username }}</font>
             {% else %}
-            <a href="{{ path('logout') }}">Not logged in, return to Homepage!</a>
+                <a href="{{ path('logout') }}">Not logged in, return to Homepage!</a>
             {% endif %}
         </p>
 
