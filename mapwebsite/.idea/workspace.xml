@@ -28,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/inc/navbar.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+            <state relative-caret-position="704">
+              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
               <folding>
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
               </folding>
@@ -362,12 +362,12 @@
       <workItem from="1589044441331" duration="877000" />
       <workItem from="1589203211940" duration="3069000" />
       <workItem from="1589228645823" duration="12399000" />
-      <workItem from="1589283920850" duration="381000" />
+      <workItem from="1589283920850" duration="1004000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141711000" />
+    <option name="totallyTimeSpent" value="142334000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -705,8 +705,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/inc/navbar.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="48" column="68" lean-forward="true" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+        <state relative-caret-position="704">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding>
             <element signature="n#style#0;n#input#1;n#form#0;n#div#0;n#div#0;n#nav#0;n#!!top" expanded="true" />
           </folding>
